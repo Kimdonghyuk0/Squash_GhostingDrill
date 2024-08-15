@@ -20,14 +20,15 @@ function FullStep() {
     }
     return () => clearTimeout(time);
   }, [time]);
+
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      // 1, 3, 4, 6, 7, 9 중 랜덤 위치 선택
+    if (start) {
+      // start가 true가 되면 즉시 실행
       const eligibleCells = [0, 2, 3, 5, 6, 8];
       const randomCell =
         eligibleCells[Math.floor(Math.random() * eligibleCells.length)];
 
-      setActiveCells((prev) => {
+      setActiveCells(() => {
         const newCells = Array(9).fill(false);
         newCells[randomCell] = true;
         return newCells;
@@ -36,10 +37,26 @@ function FullStep() {
       setTimeout(() => {
         setActiveCells(Array(9).fill(false));
       }, 1000); // 1초 후에 원이 사라짐
-    }, 2000); // 5초마다 랜덤 위치 변경
 
-    return () => clearInterval(intervalId);
-  }, []);
+      // 이후 반복적으로 실행될 코드
+      const intervalId = setInterval(() => {
+        const randomCell =
+          eligibleCells[Math.floor(Math.random() * eligibleCells.length)];
+
+        setActiveCells(() => {
+          const newCells = Array(9).fill(false);
+          newCells[randomCell] = true;
+          return newCells;
+        });
+
+        setTimeout(() => {
+          setActiveCells(Array(9).fill(false));
+        }, 1000); // 1초 후에 원이 사라짐
+      }, 2000); // 2초마다 랜덤 위치 변경
+
+      return () => clearInterval(intervalId);
+    }
+  }, [start]);
 
   return (
     <div className="squash-court relative">
