@@ -1,3 +1,83 @@
+.squash-court {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px; /* 간격 조정 */
+  background-color: #deb887; /* 바닥 색상 */
+  border: 4px solid red; /* 외부 경계 */
+  height: 100vh; /* 화면 크기에 맞게 조절 */
+  width: 100%;
+  position: relative;
+}
+
+.court-line {
+  background-color: red;
+  position: absolute;
+}
+
+.court-line.top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.court-line.bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.court-line.left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+}
+
+.court-line.right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4px;
+}
+
+.court-box {
+  position: absolute;
+  border: 4px solid red;
+}
+
+.left-box {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 45%;
+}
+
+.l-box {
+  bottom: 25%;
+  left: 0;
+  width: 25%;
+  height: 20%;
+}
+
+.r-box {
+  bottom: 25%;
+  right: 0;
+  width: 25%;
+  height: 20%;
+}
+
+
+
+.right-box {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 45%;
+}
+
 .App {
   text-align: center;
 }
