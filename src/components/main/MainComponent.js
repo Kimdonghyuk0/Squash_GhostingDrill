@@ -2,10 +2,16 @@ import React from 'react';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom';
 import { VscDebugStart } from 'react-icons/vsc';
-import { IoSettingsOutline } from 'react-icons/io5';
+import { IoVolumeHigh } from 'react-icons/io5';
+import { IoVolumeMute } from 'react-icons/io5';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleBgm } from '../../store';
 
 function MainComponent() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  let bgm = useSelector((state) => state.bgm);
 
   return (
     <div className="bg-slate-800 min-h-screen w-full flex justify-center items-center">
@@ -13,16 +19,27 @@ function MainComponent() {
         className="text-yellow-500"
         size="calc(17vw + 17vh)"
         onClick={() => {
-          navigate('/step/full');
+          navigate('/selectrange');
         }}
       />
-      <IoSettingsOutline
-        className="text-white absolute left-5 bottom-5 md:left-8 md:bottom-8"
-        size="calc(8vw + 8vh)"
-        onClick={() => {
-          navigate('/setting');
-        }}
-      />
+
+      {bgm ? (
+        <IoVolumeHigh
+          className="text-white absolute right-5 bottom-5 md:right-8 md:bottom-8"
+          size="calc(6vw + 6vh)"
+          onClick={() => {
+            dispatch(toggleBgm());
+          }}
+        />
+      ) : (
+        <IoVolumeMute
+          className="text-white absolute right-5 bottom-5 md:right-8 md:bottom-8"
+          size="calc(6vw + 6vh)"
+          onClick={() => {
+            dispatch(toggleBgm());
+          }}
+        />
+      )}
     </div>
   );
 }
