@@ -1,1 +1,1 @@
-# Squash_Step_App
+# Squash_Ghosting_App
