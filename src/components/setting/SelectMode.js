@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
+import { FaMinus, FaPlus } from 'react-icons/fa';
+import { IoInfinite } from 'react-icons/io5';
 
 const SelectDifficult = () => {
   const [mode, setMode] = useState(0); // mode가 0이면 무한 mode는 반복횟수임
@@ -35,18 +37,34 @@ const SelectDifficult = () => {
           });
         }}
       >
-        <h2 className="text-red-500 font-bold text-4xl text-center w-full">
+        <h2 className="text-white font-bold text-4xl text-center w-full flex items-center justify-center">
+          <IoInfinite className="text-6xl text-red-500 mr-2" />
           Infinity
         </h2>
       </div>
-      <div className="mode-option flex-grow flex justify-between items-center cursor-pointer px-4 border-b-4 border-yellow-500">
+      <div className="mode-option flex-grow flex flex-col justify-center items-center cursor-pointer px-4 border-b-4 border-yellow-500">
         <h2 className="text-white font-bold text-lg text-center w-full">
-          <input
-            type="number"
-            onChange={(e) => setNum(e.target.value)}
-            placeholder="Enter the number of shots"
-            className="w-full p-2 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <div className="flex items-center justify-center space-x-8">
+            {' '}
+            {/* 중앙 정렬 및 간격 조정 */}
+            <button
+              onClick={() => setNum((prev) => Math.max(0, prev - 1))}
+              className="bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl"
+            >
+              <FaMinus />
+            </button>
+            <span className="white-black font-bold text-4xl mx-8">
+              {' '}
+              {/* 숫자 크기 및 굵기 조정 */}
+              {num}
+            </span>
+            <button
+              onClick={() => setNum((prev) => prev + 1)}
+              className="bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl"
+            >
+              <FaPlus />
+            </button>
+          </div>
           <button
             onClick={() => {
               setMode(num);
@@ -59,7 +77,7 @@ const SelectDifficult = () => {
                 },
               });
             }}
-            className="mt-4 bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition duration-300"
+            className="mt-6 bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl"
           >
             Select
           </button>

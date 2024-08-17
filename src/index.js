@@ -2,22 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store.js';
-
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  console.log('beforeinstallprompt Event fired');
-
-  // 이제 deferredPrompt를 사용하여 설치 메시지를 보여줄 수 있습니다.
-  // 예: 설치 버튼을 보여주고, 사용자가 클릭하면 deferredPrompt.prompt()를 호출
-});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
