@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Squash_GhostingDril/static/css/main.acab9787.css",
-    "main.js": "/Squash_GhostingDril/static/js/main.21234bb3.js",
+    "main.js": "/Squash_GhostingDril/static/js/main.897cc3e9.js",
     "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js",
     "static/media/back.jpg": "/Squash_GhostingDril/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "/Squash_GhostingDril/static/media/front.104c661562ba3fff7ded.jpg",
@@ -16,11 +16,11 @@
     "service-worker.js": "/Squash_GhostingDril/service-worker.js",
     "index.html": "/Squash_GhostingDril/index.html",
     "main.acab9787.css.map": "/Squash_GhostingDril/static/css/main.acab9787.css.map",
-    "main.21234bb3.js.map": "/Squash_GhostingDril/static/js/main.21234bb3.js.map",
+    "main.897cc3e9.js.map": "/Squash_GhostingDril/static/js/main.897cc3e9.js.map",
     "453.4fd8039b.chunk.js.map": "/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acab9787.css",
-    "static/js/main.21234bb3.js"
+    "static/js/main.897cc3e9.js"
   ]
 }
