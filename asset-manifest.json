@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Squash_GhostingDrill/static/css/main.11a2e5df.css",
-    "main.js": "/Squash_GhostingDrill/static/js/main.600056f7.js",
+    "main.js": "/Squash_GhostingDrill/static/js/main.d9ce5d6d.js",
     "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js",
     "static/media/back.jpg": "/Squash_GhostingDrill/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "/Squash_GhostingDrill/static/media/front.104c661562ba3fff7ded.jpg",
@@ -15,11 +15,11 @@
     "static/media/backright.wav": "/Squash_GhostingDrill/static/media/backright.64e55dbb7450740dee28.wav",
     "index.html": "/Squash_GhostingDrill/index.html",
     "main.11a2e5df.css.map": "/Squash_GhostingDrill/static/css/main.11a2e5df.css.map",
-    "main.600056f7.js.map": "/Squash_GhostingDrill/static/js/main.600056f7.js.map",
+    "main.d9ce5d6d.js.map": "/Squash_GhostingDrill/static/js/main.d9ce5d6d.js.map",
     "453.4fd8039b.chunk.js.map": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11a2e5df.css",
-    "static/js/main.600056f7.js"
+    "static/js/main.d9ce5d6d.js"
   ]
 }
