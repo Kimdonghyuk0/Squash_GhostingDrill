@@ -22,7 +22,6 @@ function MainComponent() {
           navigate('/selectrange');
         }}
       />
-
       {bgm ? (
         <IoVolumeHigh
           className="text-white absolute right-5 bottom-5 md:right-8 md:bottom-8"
