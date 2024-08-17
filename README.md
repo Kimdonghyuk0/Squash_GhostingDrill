@@ -16,7 +16,7 @@
 ![KakaoTalk_20240817_200628547_08](https://github.com/user-attachments/assets/86b6b3e5-a41c-4c28-a01c-6374b680aae6)
 ### 횟수설정
 ![KakaoTalk_20240817_214418264](https://github.com/user-attachments/assets/4542c8cc-5cb5-46c4-a747-0bd2e5ff5f7c)
-### 소리on - 스텝 위치를 음성으로 들려줌
+### 소리on - 불이 들어온 위치를 음성으로 들려줌
 ![KakaoTalk_20240817_200628547_03](https://github.com/user-attachments/assets/b46bf15e-05e8-4a59-ba39-cf7d4dda3d99)
 ![KakaoTalk_20240817_200628547_02](https://github.com/user-attachments/assets/55c660dd-532b-4003-9781-ba883d54d710)
 ### 일시정지 소리on/off 기능
