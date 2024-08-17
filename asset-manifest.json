@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Squash_GhostingDril/static/css/main.11a2e5df.css",
-    "main.js": "/Squash_GhostingDril/static/js/main.03f027f6.js",
-    "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js",
-    "static/media/back.jpg": "/Squash_GhostingDril/static/media/back.9d51960a0d3ea7c30519.jpg",
-    "static/media/front.jpg": "/Squash_GhostingDril/static/media/front.104c661562ba3fff7ded.jpg",
-    "static/media/full.jpg": "/Squash_GhostingDril/static/media/full.82e019a7ace39752ec9a.jpg",
-    "static/media/custom.jpg": "/Squash_GhostingDril/static/media/custom.8d218767e81e8ad1caf4.jpg",
-    "static/media/frontleft.wav": "/Squash_GhostingDril/static/media/frontleft.3c1a2ea0a7b0456fa1e8.wav",
-    "static/media/sideleft.wav": "/Squash_GhostingDril/static/media/sideleft.bfa35aa2159022f2e78e.wav",
-    "static/media/backleft.wav": "/Squash_GhostingDril/static/media/backleft.bc5a5f4e0dfb5be08e2b.wav",
-    "static/media/frontright.wav": "/Squash_GhostingDril/static/media/frontright.90063fd57949c1a6577d.wav",
-    "static/media/sideright.wav": "/Squash_GhostingDril/static/media/sideright.4ee83d123ee842eabb3a.wav",
-    "static/media/backright.wav": "/Squash_GhostingDril/static/media/backright.64e55dbb7450740dee28.wav",
-    "index.html": "/Squash_GhostingDril/index.html",
-    "main.11a2e5df.css.map": "/Squash_GhostingDril/static/css/main.11a2e5df.css.map",
-    "main.03f027f6.js.map": "/Squash_GhostingDril/static/js/main.03f027f6.js.map",
-    "453.4fd8039b.chunk.js.map": "/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js.map"
+    "main.css": "/Squash_GhostingDrill/static/css/main.11a2e5df.css",
+    "main.js": "/Squash_GhostingDrill/static/js/main.600056f7.js",
+    "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js",
+    "static/media/back.jpg": "/Squash_GhostingDrill/static/media/back.9d51960a0d3ea7c30519.jpg",
+    "static/media/front.jpg": "/Squash_GhostingDrill/static/media/front.104c661562ba3fff7ded.jpg",
+    "static/media/full.jpg": "/Squash_GhostingDrill/static/media/full.82e019a7ace39752ec9a.jpg",
+    "static/media/custom.jpg": "/Squash_GhostingDrill/static/media/custom.8d218767e81e8ad1caf4.jpg",
+    "static/media/frontleft.wav": "/Squash_GhostingDrill/static/media/frontleft.3c1a2ea0a7b0456fa1e8.wav",
+    "static/media/sideleft.wav": "/Squash_GhostingDrill/static/media/sideleft.bfa35aa2159022f2e78e.wav",
+    "static/media/backleft.wav": "/Squash_GhostingDrill/static/media/backleft.bc5a5f4e0dfb5be08e2b.wav",
+    "static/media/frontright.wav": "/Squash_GhostingDrill/static/media/frontright.90063fd57949c1a6577d.wav",
+    "static/media/sideright.wav": "/Squash_GhostingDrill/static/media/sideright.4ee83d123ee842eabb3a.wav",
+    "static/media/backright.wav": "/Squash_GhostingDrill/static/media/backright.64e55dbb7450740dee28.wav",
+    "index.html": "/Squash_GhostingDrill/index.html",
+    "main.11a2e5df.css.map": "/Squash_GhostingDrill/static/css/main.11a2e5df.css.map",
+    "main.600056f7.js.map": "/Squash_GhostingDrill/static/js/main.600056f7.js.map",
+    "453.4fd8039b.chunk.js.map": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11a2e5df.css",
-    "static/js/main.03f027f6.js"
+    "static/js/main.600056f7.js"
   ]
 }
