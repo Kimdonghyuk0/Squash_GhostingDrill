@@ -45,37 +45,38 @@ const SelectDifficult = () => {
           Infinity
         </h2>
       </div>
+
       <div className="mode-option flex-grow flex flex-col justify-center items-center cursor-pointer px-4 border-b-4 border-yellow-500">
         <h2 className="text-white font-bold text-lg text-center w-full">
-          <div className="flex flex-wrap justify-center items-center space-x-4">
+          <div className="flex justify-center items-center space-x-2 sm:space-x-4">
             <button
               onClick={() => setNum((prev) => Math.max(0, prev - 10))}
-              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+              className="bg-yellow-500 text-black font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl sm:text-3xl"
             >
               <TbRewindBackward10 />
             </button>
 
             <button
               onClick={() => setNum((prev) => Math.max(0, prev - 1))}
-              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+              className="bg-yellow-500 text-black font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl sm:text-3xl"
             >
               <FaMinus />
             </button>
 
-            <span className="text-black font-bold text-4xl mx-4 sm:text-3xl">
+            <span className="text-white font-bold text-3xl sm:text-4xl mx-2 sm:mx-4">
               {num}
             </span>
 
             <button
               onClick={() => setNum((prev) => prev + 1)}
-              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+              className="bg-yellow-500 text-black font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl sm:text-3xl"
             >
               <FaPlus />
             </button>
 
             <button
               onClick={() => setNum((prev) => prev + 10)}
-              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+              className="bg-yellow-500 text-black font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl sm:text-3xl"
             >
               <span className="flex items-center">
                 <TbRewindForward10 />
@@ -95,7 +96,7 @@ const SelectDifficult = () => {
                 },
               });
             }}
-            className="mt-6 bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-2xl"
+            className="mt-4 sm:mt-6 bg-yellow-500 text-black font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-xl sm:text-2xl"
           >
             Select
           </button>
