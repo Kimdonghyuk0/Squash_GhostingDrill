@@ -116,7 +116,7 @@ function FullStep() {
 
         setTimeout(() => {
           setActiveCells(Array(9).fill(false));
-        }, 2000); // 1초 후에 원이 사라짐
+        }, 2000); // 2초 후에 원이 사라짐
       };
 
       executeRound(); // 첫 라운드 즉시 실행
@@ -209,7 +209,12 @@ const FinishModal = ({ setRestart, restart, setShowModal, setTime }) => {
             size={50}
             className="text-white"
             onClick={() => {
-              navigate('/');
+              const historyLength = window.history.length;
+              if (historyLength > 0) {
+                navigate(-historyLength + 1); // 히스토리 길이 - 1 만큼 뒤로 가기
+              } else {
+                navigate('/'); // 히스토리가 없으면 홈으로 가기 (필요시 대체)
+              }
             }}
           />
           <VscDebugRestart
@@ -242,7 +247,12 @@ const PauseModal = ({ setIsPaused }) => {
             size={50}
             className="text-white"
             onClick={() => {
-              navigate('/');
+              const historyLength = window.history.length;
+              if (historyLength > 0) {
+                navigate(-historyLength + 1); // 히스토리 길이 - 1 만큼 뒤로 가기
+              } else {
+                navigate('/'); // 히스토리가 없으면 홈으로 가기 (필요시 대체)
+              }
             }}
           />
           <HiMiniPlayPause

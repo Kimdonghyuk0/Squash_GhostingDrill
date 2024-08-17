@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../App.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { VscDebugStart } from 'react-icons/vsc';
 import { IoVolumeHigh } from 'react-icons/io5';
 import { IoVolumeMute } from 'react-icons/io5';
