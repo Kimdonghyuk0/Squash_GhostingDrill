@@ -1,6 +1,6 @@
 # Squash_Ghosting_App with WPA
 
-### https://kimdonghyuk0.github.io/Squash_GhostingDril/
+### https://kimdonghyuk0.github.io/Squash_GhostingDrill/
 
 ### 스쿼시 스텝연습(Ghosting drill)을 도와주는 앱
 
