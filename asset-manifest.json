@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Squash_GhostingDrill/static/css/main.11a2e5df.css",
-    "main.js": "/Squash_GhostingDrill/static/js/main.af553be8.js",
-    "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js",
+    "main.css": "/Squash_GhostingDrill/static/css/main.ec20b78f.css",
+    "main.js": "/Squash_GhostingDrill/static/js/main.f6fd8464.js",
     "static/media/back.jpg": "/Squash_GhostingDrill/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "/Squash_GhostingDrill/static/media/front.104c661562ba3fff7ded.jpg",
     "static/media/full.jpg": "/Squash_GhostingDrill/static/media/full.82e019a7ace39752ec9a.jpg",
@@ -14,12 +13,11 @@
     "static/media/sideright.wav": "/Squash_GhostingDrill/static/media/sideright.4ee83d123ee842eabb3a.wav",
     "static/media/backright.wav": "/Squash_GhostingDrill/static/media/backright.64e55dbb7450740dee28.wav",
     "index.html": "/Squash_GhostingDrill/index.html",
-    "main.11a2e5df.css.map": "/Squash_GhostingDrill/static/css/main.11a2e5df.css.map",
-    "main.af553be8.js.map": "/Squash_GhostingDrill/static/js/main.af553be8.js.map",
-    "453.4fd8039b.chunk.js.map": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js.map"
+    "main.ec20b78f.css.map": "/Squash_GhostingDrill/static/css/main.ec20b78f.css.map",
+    "main.f6fd8464.js.map": "/Squash_GhostingDrill/static/js/main.f6fd8464.js.map"
   },
   "entrypoints": [
-    "static/css/main.11a2e5df.css",
-    "static/js/main.af553be8.js"
+    "static/css/main.ec20b78f.css",
+    "static/js/main.f6fd8464.js"
   ]
 }
