@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ghosting-Drill_PWA/static/css/main.acab9787.css",
-    "main.js": "/Ghosting-Drill_PWA/static/js/main.c0edbff8.js",
+    "main.js": "/Ghosting-Drill_PWA/static/js/main.6c356480.js",
     "static/js/453.4fd8039b.chunk.js": "/Ghosting-Drill_PWA/static/js/453.4fd8039b.chunk.js",
     "static/media/back.jpg": "/Ghosting-Drill_PWA/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "/Ghosting-Drill_PWA/static/media/front.104c661562ba3fff7ded.jpg",
@@ -16,11 +16,11 @@
     "service-worker.js": "/Ghosting-Drill_PWA/service-worker.js",
     "index.html": "/Ghosting-Drill_PWA/index.html",
     "main.acab9787.css.map": "/Ghosting-Drill_PWA/static/css/main.acab9787.css.map",
-    "main.c0edbff8.js.map": "/Ghosting-Drill_PWA/static/js/main.c0edbff8.js.map",
+    "main.6c356480.js.map": "/Ghosting-Drill_PWA/static/js/main.6c356480.js.map",
     "453.4fd8039b.chunk.js.map": "/Ghosting-Drill_PWA/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acab9787.css",
-    "static/js/main.c0edbff8.js"
+    "static/js/main.6c356480.js"
   ]
 }
