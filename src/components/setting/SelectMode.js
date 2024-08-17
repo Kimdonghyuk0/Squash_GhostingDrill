@@ -3,7 +3,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 import { IoInfinite } from 'react-icons/io5';
-
+import { TbNumber10Small } from 'react-icons/tb';
+import { RiNumber1, RiNumber0 } from 'react-icons/ri';
+import { TbRewindBackward10 } from 'react-icons/tb';
+import { TbRewindForward10 } from 'react-icons/tb';
 const SelectDifficult = () => {
   const [mode, setMode] = useState(0); // mode가 0이면 무한 mode는 반복횟수임
   const [num, setNum] = useState(0);
@@ -44,27 +47,42 @@ const SelectDifficult = () => {
       </div>
       <div className="mode-option flex-grow flex flex-col justify-center items-center cursor-pointer px-4 border-b-4 border-yellow-500">
         <h2 className="text-white font-bold text-lg text-center w-full">
-          <div className="flex items-center justify-center space-x-8">
-            {' '}
-            {/* 중앙 정렬 및 간격 조정 */}
+          <div className="flex flex-wrap justify-center items-center space-x-4">
+            <button
+              onClick={() => setNum((prev) => Math.max(0, prev - 10))}
+              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+            >
+              <TbRewindBackward10 />
+            </button>
+
             <button
               onClick={() => setNum((prev) => Math.max(0, prev - 1))}
-              className="bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl"
+              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
             >
               <FaMinus />
             </button>
-            <span className="white-black font-bold text-4xl mx-8">
-              {' '}
-              {/* 숫자 크기 및 굵기 조정 */}
+
+            <span className="text-black font-bold text-4xl mx-4 sm:text-3xl">
               {num}
             </span>
+
             <button
               onClick={() => setNum((prev) => prev + 1)}
-              className="bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl"
+              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
             >
               <FaPlus />
             </button>
+
+            <button
+              onClick={() => setNum((prev) => prev + 10)}
+              className="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300 text-3xl sm:text-2xl sm:py-2 sm:px-4"
+            >
+              <span className="flex items-center">
+                <TbRewindForward10 />
+              </span>
+            </button>
           </div>
+
           <button
             onClick={() => {
               setMode(num);
