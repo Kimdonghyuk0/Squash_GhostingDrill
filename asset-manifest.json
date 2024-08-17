@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/css/main.acab9787.css",
-    "main.js": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/main.7767bd82.js",
+    "main.js": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/main.c6238cba.js",
     "static/js/453.4fd8039b.chunk.js": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js",
     "static/media/back.jpg": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/media/front.104c661562ba3fff7ded.jpg",
@@ -15,11 +15,11 @@
     "static/media/backright.wav": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/media/backright.64e55dbb7450740dee28.wav",
     "index.html": "https://kimdonghyuk0.github.io/Squash_GhostingDril/index.html",
     "main.acab9787.css.map": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/css/main.acab9787.css.map",
-    "main.7767bd82.js.map": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/main.7767bd82.js.map",
+    "main.c6238cba.js.map": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/main.c6238cba.js.map",
     "453.4fd8039b.chunk.js.map": "https://kimdonghyuk0.github.io/Squash_GhostingDril/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acab9787.css",
-    "static/js/main.7767bd82.js"
+    "static/js/main.c6238cba.js"
   ]
 }
