@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Ghosting-Drill_PWA/static/css/main.acab9787.css",
+    "main.js": "/Ghosting-Drill_PWA/static/js/main.6c356480.js",
+    "static/js/453.4fd8039b.chunk.js": "/Ghosting-Drill_PWA/static/js/453.4fd8039b.chunk.js",
+    "static/media/back.jpg": "/Ghosting-Drill_PWA/static/media/back.9d51960a0d3ea7c30519.jpg",
+    "static/media/front.jpg": "/Ghosting-Drill_PWA/static/media/front.104c661562ba3fff7ded.jpg",
+    "static/media/full.jpg": "/Ghosting-Drill_PWA/static/media/full.82e019a7ace39752ec9a.jpg",
+    "static/media/custom.jpg": "/Ghosting-Drill_PWA/static/media/custom.8d218767e81e8ad1caf4.jpg",
+    "static/media/frontleft.wav": "/Ghosting-Drill_PWA/static/media/frontleft.3c1a2ea0a7b0456fa1e8.wav",
+    "static/media/sideleft.wav": "/Ghosting-Drill_PWA/static/media/sideleft.bfa35aa2159022f2e78e.wav",
+    "static/media/backleft.wav": "/Ghosting-Drill_PWA/static/media/backleft.bc5a5f4e0dfb5be08e2b.wav",
+    "static/media/frontright.wav": "/Ghosting-Drill_PWA/static/media/frontright.90063fd57949c1a6577d.wav",
+    "static/media/sideright.wav": "/Ghosting-Drill_PWA/static/media/sideright.4ee83d123ee842eabb3a.wav",
+    "static/media/backright.wav": "/Ghosting-Drill_PWA/static/media/backright.64e55dbb7450740dee28.wav",
+    "service-worker.js": "/Ghosting-Drill_PWA/service-worker.js",
+    "index.html": "/Ghosting-Drill_PWA/index.html",
+    "main.acab9787.css.map": "/Ghosting-Drill_PWA/static/css/main.acab9787.css.map",
+    "main.6c356480.js.map": "/Ghosting-Drill_PWA/static/js/main.6c356480.js.map",
+    "453.4fd8039b.chunk.js.map": "/Ghosting-Drill_PWA/static/js/453.4fd8039b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acab9787.css",
+    "static/js/main.6c356480.js"
+  ]
+}

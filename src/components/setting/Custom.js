@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { IoIosArrowBack } from 'react-icons/io';
 
 const Custom = () => {
   const location = useLocation();
@@ -65,6 +66,20 @@ const Custom = () => {
                   Select
                 </button>
               </div>
+            )}
+            {index === 0 && (
+              <IoIosArrowBack
+                size={40}
+                style={{
+                  position: 'absolute',
+                  top: '10px', // 원하는 위치로 조정 가능
+                  left: '10px', // 원하는 위치로 조정 가능
+                  cursor: 'pointer',
+                }}
+                onClick={() => {
+                  navigate(-1);
+                }}
+              />
             )}
           </div>
         ))}
