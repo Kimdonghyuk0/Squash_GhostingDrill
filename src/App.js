@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import MainComponent from './components/main/MainComponent';
 import FullStep from './components/step/FullStep';
 import SelectRange from './components/setting/SelectRange';
@@ -10,22 +10,23 @@ import Custom from './components/setting/Custom';
 
 function App() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const handleBeforeUnload = (e) => {
-      // 메인 페이지에서만 경고 표시
+    const handlePopState = (event) => {
+      // 특정 경로에서 뒤로 가기 버튼을 무력화
       if (location.pathname === '/') {
-        e.preventDefault();
-        e.returnValue = ''; // 이 줄이 있어야 일부 브라우저에서 경고가 제대로 표시됩니다.
+        navigate(location.pathname); // 다시 현재 페이지로 리다이렉트하여 뒤로 가기를 무력화
       }
     };
 
-    window.addEventListener('beforeunload', handleBeforeUnload);
+    window.history.pushState(null, null, location.pathname); // 히스토리 상태 추가
+    window.addEventListener('popstate', handlePopState); // popstate 이벤트 리스너 추가
 
     return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
+      window.removeEventListener('popstate', handlePopState); // 컴포넌트 언마운트 시 이벤트 리스너 제거
     };
-  }, [location.pathname]);
+  }, [location, navigate]);
 
   return (
     <Routes>

@@ -116,7 +116,7 @@ function FullStep() {
 
         setTimeout(() => {
           setActiveCells(Array(9).fill(false));
-        }, 1000); // 1초 후에 원이 사라짐
+        }, 2000); // 1초 후에 원이 사라짐
       };
 
       executeRound(); // 첫 라운드 즉시 실행
