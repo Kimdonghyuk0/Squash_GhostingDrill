@@ -30,7 +30,7 @@ function FullStep() {
   ];
 
   const [activeCells, setActiveCells] = useState(Array(9).fill(false));
-  const [time, setTime] = useState(3);
+  const [time, setTime] = useState(5);
   const [start, setStart] = useState(false);
   const location = useLocation();
   const { difficulty, range, mode, selectedCells } = location.state || {};
@@ -43,6 +43,45 @@ function FullStep() {
 
   let count = 0;
   let bgm = useSelector((state) => state.bgm);
+  let wakeLock = null;
+
+  useEffect(() => {
+    async function requestWakeLock() {
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        console.log('Wake Lock is active');
+        wakeLock.addEventListener('release', () => {
+          console.log('Wake Lock was released');
+        });
+      } catch (err) {
+        console.error(`${err.name}, ${err.message}`);
+      }
+    }
+
+    document.addEventListener('visibilitychange', async () => {
+      if (wakeLock !== null && document.visibilityState === 'visible') {
+        wakeLock.release();
+        wakeLock = null;
+        requestWakeLock();
+      }
+    });
+
+    requestWakeLock();
+
+    return () => {
+      document.removeEventListener('visibilitychange', async () => {
+        if (wakeLock !== null) {
+          wakeLock.release();
+          wakeLock = null;
+        }
+      });
+
+      if (wakeLock !== null) {
+        wakeLock.release();
+        wakeLock = null;
+      }
+    };
+  }, []);
 
   //카운트 다운
   useEffect(() => {
@@ -240,7 +279,7 @@ const PauseModal = ({ setIsPaused }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-stone-900 p-6 rounded-lg shadow-lg z-50">
         <h2 className="text-2xl font-bold mb-4 text-amber-400">
-          &nbsp;&nbsp; &nbsp;&nbsp; Paused
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Paused
         </h2>
         <div className="flex justify-center space-x-4">
           <FaHome
