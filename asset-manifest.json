@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Squash_GhostingDrill/static/css/main.5631063a.css",
-    "main.js": "/Squash_GhostingDrill/static/js/main.56388df5.js",
+    "main.js": "/Squash_GhostingDrill/static/js/main.30754c9c.js",
     "static/js/453.4fd8039b.chunk.js": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js",
     "static/media/back.jpg": "/Squash_GhostingDrill/static/media/back.9d51960a0d3ea7c30519.jpg",
     "static/media/front.jpg": "/Squash_GhostingDrill/static/media/front.104c661562ba3fff7ded.jpg",
@@ -15,11 +15,11 @@
     "static/media/backright.wav": "/Squash_GhostingDrill/static/media/backright.64e55dbb7450740dee28.wav",
     "index.html": "/Squash_GhostingDrill/index.html",
     "main.5631063a.css.map": "/Squash_GhostingDrill/static/css/main.5631063a.css.map",
-    "main.56388df5.js.map": "/Squash_GhostingDrill/static/js/main.56388df5.js.map",
+    "main.30754c9c.js.map": "/Squash_GhostingDrill/static/js/main.30754c9c.js.map",
     "453.4fd8039b.chunk.js.map": "/Squash_GhostingDrill/static/js/453.4fd8039b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5631063a.css",
-    "static/js/main.56388df5.js"
+    "static/js/main.30754c9c.js"
   ]
 }
