@@ -20,6 +20,6 @@
 ![KakaoTalk_20240817_200628547_03](https://github.com/user-attachments/assets/b46bf15e-05e8-4a59-ba39-cf7d4dda3d99)
 ![KakaoTalk_20240817_200628547_02](https://github.com/user-attachments/assets/55c660dd-532b-4003-9781-ba883d54d710)
 ### 일시정지 소리on/off 기능
-![KakaoTalk_20240817_200628547_01](https://github.com/user-attachments/assets/aa2f1955-e332-4850-bcf5-37cb8c3a102d)
+![KakaoTalk_20240819_005848547](https://github.com/user-attachments/assets/6020888a-05ba-4ae7-891f-5c3bb90e450e)
 ### 훈련종료 다시하기 선택시 기존 입력한 횟수로 재시작
 ![KakaoTalk_20240817_200628547](https://github.com/user-attachments/assets/013c53c8-d051-48c7-86e2-29b267981075)
